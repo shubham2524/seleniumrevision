@@ -21,6 +21,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 public class InfosysInterviewSeleniumPractice {
 
@@ -65,7 +66,7 @@ public class InfosysInterviewSeleniumPractice {
 		driver.findElement(By.id("user-name")).sendKeys(username);
 		driver.findElement(By.id("password")).sendKeys(password);
 		driver.findElement(By.id("login-button")).click();
-		
+		Reporter.log("login successfully");
 		/*WebElement beg = driver.findElement(By.xpath("//div[text() = 'Sauce Labs Backpack']"));
 		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
